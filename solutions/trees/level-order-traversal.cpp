@@ -9,7 +9,7 @@ int height(Node* root) {
 
 void printHeight(Node* root, int height) {
     if (root) {
-        if (root && (height == 0)) {
+        if (height == 0) {
             std::cout << root->data << " ";
         } else {
             printHeight(root->left, height - 1);
